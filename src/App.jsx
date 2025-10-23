@@ -1,33 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+    <div className="header">
+      <div className="logo">
+        <img width={'80'} src="../src/assets/logo.png" alt="MovieApp Logo" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="nav-links">
+        <a href="#" className="nav-link">Home</a>
+        <a href="#" className="nav-link">Movies</a>
+        <a href="#" className="nav-link">Series</a>
+        <a href="#" className="nav-link">New Releases</a>
+        <a href="#" className="nav-link">Popular</a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="login-signup">
+        <a className='signIn' href="#">Sign In</a>
+        
+        <a className='signUp' href="#">Sign Up</a>
+      </div>
+    </div>
+     <div className="MovieApp">
+       
+        <div className="moveLeft">
+          <div className="tagline">
+             <h1>Discover <span className='pink'>trending </span>and classic <span className='pink'>movies</span></h1>
+          </div>
+          <div className='btnMore'>
+              <a className="watchMore">Watch More</a>
+          </div>
+         
+        </div>
+         <div className="right-image">
+        <img 
+          src="../src/assets/image.png" 
+          alt="Marvel"
+          className="movie-image"
+        />
+      </div> 
+     </div>
+
+
+      
     </>
   )
 }
