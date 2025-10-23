@@ -5,11 +5,10 @@ function App() {
 
   return (
     <>
-
-    <div className="header">
-      <div className="logo">
-        <img width={'80'} src="../src/assets/logo.png" alt="MovieApp Logo" />
-      </div>
+      <div className="header">
+        <div className="logo">
+          <h2 style={{ color: 'rgb(251 138 34)' }}>Movie Site</h2>
+        </div>
       <div className="nav-links">
         <a href="#" className="nav-link">Home</a>
         <a href="#" className="nav-link">Movies</a>

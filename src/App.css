@@ -165,7 +165,9 @@ body {
     flex-direction: column;
     gap: 20px;
   }
-
+  .btnMore, .tagline{
+    text-align: center;
+  }
   .nav-links {
     gap: 15px;
   }
