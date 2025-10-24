@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+.navMenu {
+  display: none;
+}
 .signIn {
   color: #fb8b22e6;
   text-decoration: none;
@@ -170,12 +174,20 @@ footer{
   transform: scale(1.05);
 }
 
+
+@media (max-width: 910px){
+  .nav-links, .login-signup {
+    display: none;
+    
+  }
+  .navMenu {
+    display: block;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
     padding: 15px 20px;
-    flex-direction: column;
-    gap: 20px;
   }
   .btnMore, .tagline{
     text-align: center;
