@@ -137,6 +137,18 @@ body {
   animation: slideInRight 0.8s ease-out;
 }
 
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: #fb8b22e6;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
 @keyframes slideInRight {
   from {
     opacity: 0;

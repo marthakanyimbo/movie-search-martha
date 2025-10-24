@@ -7,43 +7,47 @@ function App() {
     <>
       <div className="header">
         <div className="logo">
-          <h2 style={{ color: 'rgb(251 138 34)' }}>Movie Site</h2>
+          <h2 style={{ color: 'white', backgroundColor: 'rgb(251 138 34)', padding: '8px 12px', borderTopRightRadius: '25px', borderBottomLeftRadius: '25px' }}>martha</h2>
         </div>
-      <div className="nav-links">
-        <a href="#" className="nav-link">Home</a>
-        <a href="#" className="nav-link">Movies</a>
-        <a href="#" className="nav-link">Series</a>
-        <a href="#" className="nav-link">New Releases</a>
-        <a href="#" className="nav-link">Popular</a>
+        <div className="nav-links">
+          <a href="#" className="nav-link">Home</a>
+          <a href="#" className="nav-link">Movies</a>
+          <a href="#" className="nav-link">Series</a>
+          <a href="#" className="nav-link">New Releases</a>
+          <a href="#" className="nav-link">Popular</a>
+        </div>
+        <div className="login-signup">
+          <a className='signIn' href="#">Sign In</a>
+
+          <a className='signUp' href="#">Sign Up</a>
+        </div>
       </div>
-      <div className="login-signup">
-        <a className='signIn' href="#">Sign In</a>
-        
-        <a className='signUp' href="#">Sign Up</a>
-      </div>
-    </div>
-     <div className="MovieApp">
-       
+      <div className="MovieApp">
+
         <div className="moveLeft">
           <div className="tagline">
-             <h1>Discover <span className='pink'>trending </span>and classic <span className='pink'>movies</span></h1>
+            <h1>Discover <span className='pink'>trending </span>and classic <span className='pink'>movies</span></h1>
           </div>
           <div className='btnMore'>
-              <a className="watchMore">Watch More</a>
+            <a className="watchMore">Watch More</a>
           </div>
-         
+
         </div>
-         <div className="right-image">
-        <img 
-          src="../src/assets/image.png" 
-          alt="Marvel"
-          className="movie-image"
-        />
-      </div> 
-     </div>
+        <div className="right-image">
+          <img
+            src="../src/assets/image.png"
+            alt="Marvel"
+            className="movie-image"
+          />
+        </div>
 
 
-      
+      </div>
+
+      <footer>
+        <p>©2025 Martha. All rights reserved.</p>
+      </footer>
+
     </>
   )
 }
